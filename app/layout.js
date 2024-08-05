@@ -1,16 +1,19 @@
+import MainHeader from "@/components/main-header/main-header";
 import "./globals.css";
+import MainHeaderBackground from "@/components/main-header/main-header-background";
 
-// 헤더 역활
 export const metadata = {
-  title: "NextJS Course App",
-  description: "Your first NextJS app!",
+  title: "NextLevel Food",
+  description: "Delicious meals, shared by a food-loving community.",
 };
 
-// 페이지를 감싸는 포장지 느낌
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <MainHeader />
+        {children}
+      </body>
     </html>
   );
 }
