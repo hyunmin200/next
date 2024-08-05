@@ -5,13 +5,13 @@ export default function Home() {
     <main>
       <h1 style={{ color: "white", textAlign: "center" }}>Time to get started!</h1>
       <p>
-        <Link href="/meals"></Link>
+        <Link href="/meals">Meals</Link>
       </p>
       <p>
-        <Link href="/meals/share"></Link>
+        <Link href="/meals/share">Share Meals</Link>
       </p>
       <p>
-        <Link href="/community"></Link>
+        <Link href="/community">Community</Link>
       </p>
     </main>
   );
