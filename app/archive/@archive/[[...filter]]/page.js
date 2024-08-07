@@ -28,6 +28,13 @@ export default function FilteredNewsPage({ params }) {
     console.log("들옴?");
   }
 
+  if (
+    (selectedYear && !getAvailableNewsYears().includes(+selectedYear)) ||
+    (selectedMonth && !getAvailableNewsMonths().includes(+selectedMonth))
+  ) {
+    throw new Error("Invalid filter.");
+  }
+
   return (
     <>
       <header id="archive-header">
